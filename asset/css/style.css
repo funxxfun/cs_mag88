@@ -1,13 +1,143 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
 /* ここから共通 */
-
-
+body {
+  text-align: center;
+  color: #2a2a2a;
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1200px;
+  padding: 0.5%;
+  margin-bottom: 80px;
+}
+.section-title {
+  margin-bottom: 20px;
+}
+.wrapper h2 {
+  font-size: 24px;
+}
+.wrapper p {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.btn {
+  border: solid 1px #2a2a2a;
+  color: #2a2a2a;
+  padding: 14px 36px;
+  font-size: 12px;
+  margin-top: 30px;
+}
+/* ここからheader */
 header {
   background-image: url(../img/R_1920x1269.png);
   background-size: cover;
   height: 100vh;
+  margin-bottom: 80px;
+  position: relative;
+}
+header img {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+/* ここからmagazine */
+#magazine {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.magazine-item {
+  display: flex;
+  justify-content: space-between;
+}
+.magazine-item-list {
+  position: relative;
+  max-width: 49%;
+}
+.magazine-item-list .title {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.magazine-item-list .text {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: bold;
+  max-width: 290px;
+  position: absolute;
+  padding: 15px 0;
+  top: 40%;
+  left: 0;
+  right: 0;
+}
+/* ここからfashion */
+#fashion {
+  height: 520px;
+  background-image: url(../img/sample_1920x400.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px;
+  margin-bottom: 80px;
+}
+/* ここからcatalog-antique */
+.catalog-antique {
+  background-color: #f5f5f5;
+}
+.catalog-antique .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 5%;
+}
+.catalog-antique h2 {
+  margin-bottom: 40px;
+}
+.catalog-antique p {
+  padding-bottom: 0;
+  text-align: left;
+}
+.catalog-antique p:last-child {
+  margin-bottom: 0;
+}
+.catalog-antique .item {
+  width: 49%;
+  text-align: center;
+}
+#catalog {
+  margin-bottom: 0;
+}
+/* ここからfooter */
+#footer .footer-wrapper {
+  background-color: #333;
+  color: #fff;
+  padding: 100px 5%;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .footer-item {
+  width: 33.3%;
+  text-align: left;
+}
+#footer .footer-item .title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#footer .footer-item img {
+  padding: 60px 0;
+}
+#footer p, li {
+  font-size: 12px;
+  line-height: 2;
+}
+#footer .copyright {
+  padding: 30px 0;
+  font-size: 12px;
 }
