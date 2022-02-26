@@ -15,6 +15,9 @@ img {
 a {
   text-decoration: none;
 }
+a:hover {
+  opacity: 0.7;
+}
 .wrapper {
   max-width: 1200px;
   padding: 0.5%;
@@ -141,3 +144,55 @@ header img {
   padding: 30px 0;
   font-size: 12px;
 }
+/* ここからレスポンシブ */
+@media screen and (max-width: 896px) {
+  .magazine-item {
+    padding: 0 5%;
+    display: block;
+  }
+  .magazine-item-list {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .magazine-item-list .text {
+    padding: 15px 0;
+    margin: 0 auto;
+  }
+  .magazine-item-list p {
+    margin-bottom: 0;
+  }
+  .catalog-antique .wrapper {
+    display: block;
+    padding: 30px 5%;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .catalog-antique .item {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .catalog-antique .item {
+    margin-top: 60px;
+  }
+  #footer .footer-wrapper {
+    flex-direction: column;
+    padding: 30px;
+  }
+  #footer .footer-item {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #footer .footer-item img {
+    padding: 0;
+    margin: 0 auto;
+  }
+    #footer .footer-item .title, p, li {
+      text-align: left;
+    }
+    .copyright p{
+      text-align: center;
+    }
+  }
