@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ここから共通 */
+
+
+header {
+  background-image: url(../img/R_1920x1269.png);
+  background-size: cover;
+  height: 100vh;
+}
